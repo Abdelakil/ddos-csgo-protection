@@ -50,6 +50,13 @@ sudo iptables -A Filter-GAME -p udp -m udp -m hashlimit --hashlimit-above 1/sec 
 sudo iptables -A Filter-GAME -p udp -m udp -j RETURN
 ```
 
+Make the script executable and run it:
+```
+sudo chmod +x ./iptables.sh
+sudo ./iptables.sh
+
+```
+
 To check if the rules have been applied successfully, run the following command:
 ```
 sudo iptables -S
