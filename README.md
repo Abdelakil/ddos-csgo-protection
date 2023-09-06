@@ -79,4 +79,12 @@ sudo reboot
 ```
 After the reboot, the iptables rules should be applied as configured.
 
+
+To remove the protection:
+```
+sudo iptables -F
+sudo iptables -X
+
+```
+
 **Note:** It is important to exercise caution when modifying iptables rules, as incorrect configurations can potentially block desired network traffic or cause unintended consequences. Make sure to test the rules thoroughly before relying on them in a production environment.
